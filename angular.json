@@ -140,7 +140,8 @@
               "browserTarget": "consumer-ui:build:production"
             },
             "development": {
-              "browserTarget": "consumer-ui:build:development"
+              "browserTarget": "consumer-ui:build:development",
+              "port": 34201
             }
           },
           "defaultConfiguration": "development"
@@ -243,7 +244,8 @@
               "browserTarget": "business-ui:build:production"
             },
             "development": {
-              "browserTarget": "business-ui:build:development"
+              "browserTarget": "business-ui:build:development",
+              "port": 34202
             }
           },
           "defaultConfiguration": "development"
@@ -346,7 +348,8 @@
               "browserTarget": "platform-ui:build:production"
             },
             "development": {
-              "browserTarget": "platform-ui:build:development"
+              "browserTarget": "platform-ui:build:development",
+              "port": 34203
             }
           },
           "defaultConfiguration": "development"
@@ -450,7 +453,8 @@
               "browserTarget": "style-guide:build:production"
             },
             "development": {
-              "browserTarget": "style-guide:build:development"
+              "browserTarget": "style-guide:build:development",
+              "port": 34204
             }
           },
           "defaultConfiguration": "development"
