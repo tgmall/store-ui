@@ -1,15 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonBizComponent } from './common-biz.component';
 
 
 @NgModule({
-  declarations: [
-    CommonBizComponent,
-  ],
+  declarations: [],
   imports: [],
-  exports: [
-    CommonBizComponent,
-  ],
+  exports: [],
 })
 export class CommonBizModule {
 }
