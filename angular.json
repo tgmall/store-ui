@@ -8,6 +8,12 @@
   "projects": {
     "common-non-biz": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "displayBlock": true
+        }
+      },
       "root": "projects/common-non-biz",
       "sourceRoot": "projects/common-non-biz/src",
       "prefix": "lib",
@@ -39,6 +45,12 @@
     },
     "common-biz": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "displayBlock": true
+        }
+      },
       "root": "projects/common-biz",
       "sourceRoot": "projects/common-biz/src",
       "prefix": "lib",
@@ -72,7 +84,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "displayBlock": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -176,7 +189,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "displayBlock": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -280,7 +294,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "displayBlock": true
         },
         "@schematics/angular:application": {
           "strict": true
