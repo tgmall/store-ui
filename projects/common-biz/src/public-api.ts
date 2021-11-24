@@ -3,3 +3,4 @@
  */
 
 export * from './lib/common-biz.module';
+export * from './lib/generated/graphql';

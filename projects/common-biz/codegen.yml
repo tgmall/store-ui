@@ -1,0 +1,19 @@
+overwrite: true
+schema:
+  - projects/common-biz/.graphql.schema.json
+
+documents: "projects/common-biz/src/lib/**/*.graphql"
+generates:
+  projects/common-biz/src/lib/generated/graphql.ts:
+    config:
+      strictScalars: true
+      scalars:
+        UUID: string
+        BigDecimal: number
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-apollo-angular"
+  projects/common-biz/.graphql.schema.json:
+    plugins:
+      - "introspection"

@@ -44,3 +44,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+/projects/common-biz/src/lib/generated/graphql.ts

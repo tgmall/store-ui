@@ -1,0 +1,21 @@
+query currentUser {
+  currentUser {
+    id
+    username
+    nickName
+    mobile
+    avatarUrl
+    subject {
+      id
+      name
+      type
+      contact {
+        id
+        name
+        mobile
+        address
+        postcode
+      }
+    }
+  }
+}
