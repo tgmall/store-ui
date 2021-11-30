@@ -1,10 +1,15 @@
 import { NgModule } from '@angular/core';
+import { ResizeObserverDirective } from './resize-observer/resize-observer.directive';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ResizeObserverDirective,
+  ],
   imports: [],
-  exports: [],
+  exports: [
+    ResizeObserverDirective,
+  ],
 })
 export class CommonNonBizModule {
 }
