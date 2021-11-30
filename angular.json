@@ -16,7 +16,7 @@
       },
       "root": "projects/common-non-biz",
       "sourceRoot": "projects/common-non-biz/src",
-      "prefix": "lib",
+      "prefix": "ui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -53,7 +53,7 @@
       },
       "root": "projects/common-biz",
       "sourceRoot": "projects/common-biz/src",
-      "prefix": "lib",
+      "prefix": "biz",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
