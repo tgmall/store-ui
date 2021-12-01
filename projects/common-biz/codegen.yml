@@ -10,6 +10,7 @@ generates:
       scalars:
         UUID: string
         BigDecimal: number
+        Instant: Date
     plugins:
       - "typescript"
       - "typescript-operations"
