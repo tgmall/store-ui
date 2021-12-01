@@ -1,0 +1,5 @@
+<form class="d-flex" (submit)="service.search()">
+  <input class="form-control me-2" type="search" [placeholder]="service.placeholder" [attr.aria-label]="service.title"
+         [(ngModel)]="service.term" name="term">
+  <button class="btn btn-outline-success text-nowrap" type="submit">{{service.title}}</button>
+</form>
