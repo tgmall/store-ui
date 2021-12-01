@@ -22,6 +22,16 @@ export class DropdownDirective {
     }
   }
 
+  @HostListener('mouseenter')
+  mouseEnter(): void {
+    this.hidden = false;
+  }
+
+  @HostListener('mouseleave')
+  mouseLeave(): void {
+    this.hidden = true;
+  }
+
   private isDescentElement(target: Element | null): Boolean {
     return target !== null && (target === this.elementRef.nativeElement || this.isDescentElement(target.parentElement));
   }
