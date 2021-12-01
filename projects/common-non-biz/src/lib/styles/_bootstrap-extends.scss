@@ -1,2 +1,6 @@
 @import "common";
 @import "~bootstrap/scss/bootstrap";
+
+.navbar a {
+  text-decoration: none;
+}

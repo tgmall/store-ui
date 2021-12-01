@@ -1,0 +1,9 @@
+<div class="navbar-text" *bizIfAuthenticated>欢迎您，{{auth.me!!.nickName}}！</div>
+<ul class="navbar-nav" *bizIfAnonymous>
+  <li class="nav-item">
+    <a class="nav-link" href="#">请登录</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">免费注册</a>
+  </li>
+</ul>

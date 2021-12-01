@@ -1,0 +1,9 @@
+@import "common";
+
+:host {
+  display: block;
+}
+
+main {
+  padding-top: $alert-padding-y;
+}

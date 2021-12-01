@@ -1,0 +1,5 @@
+<app-global-header uiResizeObserver #header="uiResizeObserver"></app-global-header>
+<main [style.min-height]="'calc(100vh - ' + header.size.height + 'px - ' + footer.size.height + 'px)'">
+  <router-outlet></router-outlet>
+</main>
+<app-global-footer uiResizeObserver #footer="uiResizeObserver"></app-global-footer>

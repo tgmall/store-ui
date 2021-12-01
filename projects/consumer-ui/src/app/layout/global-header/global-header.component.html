@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <app-icon name="logo" title="添购商城"></app-icon>
+    </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <div class="navbar-text">
+        <a routerLink="/">欢迎来到添购商城</a>
+      </div>
+      <div class="me-auto"></div>
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <biz-user-status></biz-user-status>
+        </li>
+        <li class="nav-item dropdown">
+          <app-user-center-dropdown-menu></app-user-center-dropdown-menu>
+        </li>
+        <li class="nav-item dropdown">
+          <app-cart-dropdown-menu></app-cart-dropdown-menu>
+        </li>
+        <li class="nav-item dropdown">
+          <app-favorite-dropdown></app-favorite-dropdown>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

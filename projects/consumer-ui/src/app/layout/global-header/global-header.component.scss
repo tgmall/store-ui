@@ -1,0 +1,21 @@
+:host {
+  display: block;
+}
+
+.dropdown {
+  ::ng-deep {
+    .dropdown-menu {
+      right: 0;
+    }
+  }
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-top: -15px;
+  margin-bottom: -15px;
+
+  app-icon[name=logo] {
+    font-size: 36px;
+  }
+}
