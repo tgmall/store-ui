@@ -1,0 +1,21 @@
+mutation register($mobile: String!, $smsCode: String!, $password: String!) {
+  register(mobile: $mobile, smsCode: $smsCode,password: $password) {
+    id
+    username
+    nickName
+    mobile
+    avatarUrl
+    subject {
+      id
+      name
+      type
+      contact {
+        id
+        name
+        mobile
+        address
+        postcode
+      }
+    }
+  }
+}

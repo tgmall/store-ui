@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonBizModule } from '../../../../common-biz/src/lib/common-biz.module';
 import { UserStatusComponent } from './user-status/user-status.component';
 
@@ -11,6 +12,7 @@ import { UserStatusComponent } from './user-status/user-status.component';
   imports: [
     CommonModule,
     CommonBizModule,
+    RouterModule,
   ],
   exports: [
     UserStatusComponent,

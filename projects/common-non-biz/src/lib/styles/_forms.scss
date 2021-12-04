@@ -1,0 +1,7 @@
+@import "common";
+
+.ng-required .form-label::after {
+  content: "*";
+  color: $danger;
+  margin-left: $size-sm
+}

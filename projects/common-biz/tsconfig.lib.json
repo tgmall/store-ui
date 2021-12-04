@@ -7,7 +7,12 @@
     "declarationMap": true,
     "inlineSources": true,
     "noImplicitOverride": false,
-    "types": []
+    "types": [],
+    "paths": {
+      "common-non-biz": [
+        "projects/common-non-biz/src/public-api.ts"
+      ]
+    }
   },
   "exclude": [
     "src/test.ts",

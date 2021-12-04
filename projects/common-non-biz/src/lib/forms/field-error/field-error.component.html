@@ -1,0 +1,5 @@
+<ul *ngIf="control?.dirty && control?.errors">
+  <li *ngFor="let error of control?.errors | errorsToArray">
+    <span [innerHTML]="error|fieldError:customMessages|safeHtml"></span>
+  </li>
+</ul>

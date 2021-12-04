@@ -1,0 +1,15 @@
+@import "common";
+
+:host {
+  display: block;
+}
+
+[appCaptcha] {
+  width: 140px;
+  height: $input-height;
+}
+
+input.captcha {
+  width: 5em;
+  text-transform: uppercase;
+}

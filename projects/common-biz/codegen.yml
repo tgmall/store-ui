@@ -11,6 +11,8 @@ generates:
         UUID: string
         BigDecimal: number
         Instant: Date
+        Image: string
+        Unit: void
     plugins:
       - "typescript"
       - "typescript-operations"

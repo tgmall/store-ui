@@ -1,0 +1,42 @@
+<form [formGroup]="form" (submit)="submit(captcha)">
+  <div class="mb-3" uiFormField>
+    <label class="form-label">手机号</label>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" [formControl]="model.mobile" placeholder=""/>
+      </div>
+      <div class="col-auto px-0">
+        <input type="text" class="form-control captcha" placeholder="" [formControl]="captchaControl"/>
+      </div>
+      <div class="col-auto px-0">
+        <img appCaptcha #captcha="appCaptcha" alt="图形验证码"/>
+      </div>
+      <div class="col-auto px-0">
+        <button type="button" class="btn btn-primary" [disabled]="!model.mobile.valid || !captchaControl.valid"
+                (click)="sendCodeViaSms(model.mobile.value, captcha.id!!, captchaControl.value)">发送
+        </button>
+      </div>
+    </div>
+    <ui-field-error [customMessages]="{mobile: '手机号格式无效', mobileExists: '手机号已经存在'}"></ui-field-error>
+  </div>
+  <div class="mb-3" uiFormField>
+    <label class="form-label">验证码</label>
+    <input type="text" class="form-control" [formControl]="model.smsCode" placeholder=""/>
+    <ui-field-error></ui-field-error>
+  </div>
+  <div class="mb-3" uiFormField>
+    <label class="form-label">密码</label>
+    <input type="password" class="form-control" [formControl]="model.password" placeholder=""/>
+    <ui-field-error [customMessages]="{complexity: '密码复杂度不够，至少需要 <%= expectedComplexity %> 种字符'}"></ui-field-error>
+  </div>
+  <div class="mb-3" uiFormField>
+    <label class="form-label">确认密码</label>
+    <input type="password" class="form-control" [formControl]="model.retypedPassword" placeholder=""/>
+    <ui-field-error [customMessages]="{sameAs: '确认密码必须和原始密码相同'}"></ui-field-error>
+  </div>
+
+  <ui-field-error></ui-field-error>
+  <div class="mb-3" uiFormField>
+    <button type="submit" class="btn btn-primary float-end">注册</button>
+  </div>
+</form>

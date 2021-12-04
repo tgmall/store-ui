@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../../../../common-biz/src/lib/auth/auth.service';
+import { AuthService } from 'common-biz';
 
 @Component({
   selector: 'biz-user-status',
