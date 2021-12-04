@@ -159,6 +159,7 @@
             },
             "development": {
               "browserTarget": "consumer-ui:build:development",
+              "proxyConfig": "./proxy-config.js",
               "port": 34201
             }
           },
@@ -274,6 +275,7 @@
             },
             "development": {
               "browserTarget": "business-ui:build:development",
+              "proxyConfig": "./proxy-config.js",
               "port": 34202
             }
           },
@@ -389,6 +391,7 @@
             },
             "development": {
               "browserTarget": "platform-ui:build:development",
+              "proxyConfig": "./proxy-config.js",
               "port": 34203
             }
           },
@@ -504,6 +507,7 @@
             },
             "development": {
               "browserTarget": "style-guide:build:development",
+              "proxyConfig": "./proxy-config.js",
               "port": 34204
             }
           },
