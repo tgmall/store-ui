@@ -12,6 +12,10 @@ export class UserStatusComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.auth.fetchCurrentUserIfLoggedIn().subscribe();
   }
 
+  login(): void {
+    this.auth.fetchCurrentUser().subscribe();
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'common-biz';
 
 @Component({
   selector: 'app-user-center-dropdown-menu',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserCenterDropdownMenuComponent implements OnInit {
 
-  constructor() {
+  constructor(public auth: AuthService) {
   }
 
   ngOnInit(): void {

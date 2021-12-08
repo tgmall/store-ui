@@ -1,9 +1,10 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ApolloClientOptions, InMemoryCache } from '@apollo/client/core';
 import { APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
+import { AuthInterceptor } from 'common-biz';
 import { CommonNonBizModule } from 'common-non-biz';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -40,6 +41,7 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
   ],
   providers: [
     { provide: APOLLO_OPTIONS, useFactory: createApollo, deps: [HttpLink] },
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
   ],
   bootstrap: [AppComponent],
 })
