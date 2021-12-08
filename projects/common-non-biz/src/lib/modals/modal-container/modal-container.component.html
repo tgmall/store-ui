@@ -1,0 +1,4 @@
+<div class="modal-backdrop show" *ngIf="service.hasBackdrop" (click)="service.backdropClick()"></div>
+<div *ngFor="let item of service.items">
+  <div *ngComponentOutlet="item.component; injector: item.config.injector!!"></div>
+</div>

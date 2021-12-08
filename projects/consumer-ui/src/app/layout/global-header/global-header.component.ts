@@ -6,12 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./global-header.component.scss'],
 })
 export class GlobalHeaderComponent implements OnInit {
-  height: number = 0;
-
   constructor() {
   }
 
   ngOnInit(): void {
   }
-
 }

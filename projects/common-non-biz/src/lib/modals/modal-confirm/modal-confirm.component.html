@@ -1,0 +1,22 @@
+<ui-modal (clickOutside)="cancel()" [css]="modalCss">
+  <div class="modal-header">
+    <h5 class="modal-title">{{title}}</h5>
+    <button type="button" class="btn-close" aria-label="关闭" (click)="cancel()"></button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-auto">
+        <div class="modal-icon"></div>
+      </div>
+      <div class="col">
+        <div class="modal-message">
+          {{message ?? '(空)'}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-warning" (click)="ok()">确定</button>
+    <button type="button" class="btn btn-outline-secondary" (click)="cancel()">取消</button>
+  </div>
+</ui-modal>
