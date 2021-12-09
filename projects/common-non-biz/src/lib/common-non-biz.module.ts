@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { AutoFocusDirective } from './auto-focus/auto-focus.directive';
 import { DropdownMenuDirective } from './dropdown/dropdown-menu/dropdown-menu.directive';
 import { DropdownToggleDirective } from './dropdown/dropdown-toggle/dropdown-toggle.directive';
 import { DropdownDirective } from './dropdown/dropdown.directive';
@@ -27,6 +28,7 @@ export * from './forms/field-error/field-error-mapper.service';
     FieldErrorPipe,
     FieldErrorComponent,
     FormFieldDirective,
+    AutoFocusDirective,
   ],
   imports: [
     CommonModule,
@@ -43,6 +45,7 @@ export * from './forms/field-error/field-error-mapper.service';
     FieldErrorPipe,
     FieldErrorComponent,
     FormFieldDirective,
+    AutoFocusDirective,
   ],
 })
 export class CommonNonBizModule {
