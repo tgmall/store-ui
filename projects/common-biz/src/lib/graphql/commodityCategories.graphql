@@ -1,0 +1,10 @@
+query commodityCategories {
+  commodityCategories {
+    id
+    name
+    relatedTags {
+      id
+      tag
+    }
+  }
+}

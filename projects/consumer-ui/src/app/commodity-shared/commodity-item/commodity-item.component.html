@@ -1,0 +1,12 @@
+<a *ngIf="item" [routerLink]="[item.id]">
+  <div class="card mb-3">
+    <img [src]="item|commoditySmallImage|safeResourceUrl" loading="lazy" class="card-img-top py-2" [alt]="item.name">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">{{item.description}}</p>
+    </div>
+    <div class="card-footer text-center">
+      <app-commodity-price [item]="item"></app-commodity-price>
+    </div>
+  </div>
+</a>

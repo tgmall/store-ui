@@ -1,0 +1,4 @@
+<ng-container *ngIf="commodity">
+  <app-book-detail *ngIf="commodity.type == 'Book'"></app-book-detail>
+  <app-commodity-detail *ngIf="commodity.type == 'Default'" [commodity]="commodity"></app-commodity-detail>
+</ng-container>

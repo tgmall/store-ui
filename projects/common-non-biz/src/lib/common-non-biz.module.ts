@@ -17,6 +17,7 @@ import { ModalTemplateComponent } from './modals/modal-template/modal-template.c
 import { ModalComponent } from './modals/modal/modal.component';
 import { ResizeObserverDirective } from './resize-observer/resize-observer.directive';
 import { SafeHtmlPipe } from './safe-html/safe-html.pipe';
+import { SafeResourceUrlPipe } from './safe-resource-url/safe-resource-url.pipe';
 import { SearchBoxComponent } from './search-box/search-box.component';
 
 export * from './forms/form-model';
@@ -42,6 +43,7 @@ export * from './modals/modal.service';
     ModalTemplateComponent,
     ModalConfirmComponent,
     ModalPromptComponent,
+    SafeResourceUrlPipe,
   ],
   imports: [
     CommonModule,
@@ -61,6 +63,7 @@ export * from './modals/modal.service';
     AutoFocusDirective,
     ModalComponent,
     ModalContainerComponent,
+    SafeResourceUrlPipe,
   ],
 })
 export class CommonNonBizModule {

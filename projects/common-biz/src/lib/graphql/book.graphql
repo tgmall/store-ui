@@ -1,0 +1,23 @@
+query book($id: String!) {
+  book(id: $id) {
+    isbn
+    abstract
+    contentTable
+    coverUrl
+    highlight
+    language
+    publishDate
+    weight
+    press {
+      id
+      name
+    }
+    contributors {
+      role
+      subject {
+        id
+        name
+      }
+    }
+  }
+}
