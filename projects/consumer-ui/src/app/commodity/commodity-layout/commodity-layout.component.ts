@@ -12,5 +12,4 @@ export class CommodityLayoutComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

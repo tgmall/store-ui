@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+  <li *ngFor="let item of service.items" class="breadcrumb-item">
+    <a [href]="item.url" *ngIf="isLink(item)">{{item.title}}</a>
+    <span *ngIf="!isLink(item)">{{item.title}}</span>
+  </li>
+</ul>

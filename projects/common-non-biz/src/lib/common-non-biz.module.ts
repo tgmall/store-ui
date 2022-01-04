@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AutoFocusDirective } from './auto-focus/auto-focus.directive';
+import { BreadcrumbItemDirective } from './breadcrumb/breadcrumb-item.directive';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { DropdownMenuDirective } from './dropdown/dropdown-menu/dropdown-menu.directive';
 import { DropdownToggleDirective } from './dropdown/dropdown-toggle/dropdown-toggle.directive';
 import { DropdownDirective } from './dropdown/dropdown.directive';
@@ -27,6 +29,7 @@ export * from './forms/field-error/field-error-mapper.service';
 export * from './modals/modal.service';
 export * from './loading/loading.service';
 export * from './loading/loading.interceptor';
+export * from './breadcrumb/breadcrumb.item';
 
 @NgModule({
   declarations: [
@@ -50,6 +53,8 @@ export * from './loading/loading.interceptor';
     SafeResourceUrlPipe,
     LoadingComponent,
     IconLoadingComponent,
+    BreadcrumbComponent,
+    BreadcrumbItemDirective,
   ],
   imports: [
     CommonModule,
@@ -72,6 +77,8 @@ export * from './loading/loading.interceptor';
     SafeResourceUrlPipe,
     LoadingComponent,
     IconLoadingComponent,
+    BreadcrumbComponent,
+    BreadcrumbItemDirective,
   ],
 })
 export class CommonNonBizModule {
