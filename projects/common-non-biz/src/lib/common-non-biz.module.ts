@@ -9,6 +9,8 @@ import { ErrorsToArrayPipe } from './errors-to-array/object-to-array.pipe';
 import { FieldErrorComponent } from './forms/field-error/field-error.component';
 import { FieldErrorPipe } from './forms/field-error/field-error.pipe';
 import { FormFieldDirective } from './forms/form-field/form-field.directive';
+import { IconLoadingComponent } from './loading/icon-loading/icon-loading.component';
+import { LoadingComponent } from './loading/loading.component';
 import { ModalConfirmComponent } from './modals/modal-confirm/modal-confirm.component';
 import { ModalContainerComponent } from './modals/modal-container/modal-container.component';
 import { ModalMessageBoxComponent } from './modals/modal-message-box/modal-message-box.component';
@@ -44,6 +46,8 @@ export * from './modals/modal.service';
     ModalConfirmComponent,
     ModalPromptComponent,
     SafeResourceUrlPipe,
+    LoadingComponent,
+    IconLoadingComponent,
   ],
   imports: [
     CommonModule,
@@ -64,6 +68,7 @@ export * from './modals/modal.service';
     ModalComponent,
     ModalContainerComponent,
     SafeResourceUrlPipe,
+    LoadingComponent,
   ],
 })
 export class CommonNonBizModule {
