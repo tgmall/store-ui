@@ -6,7 +6,6 @@ import { APOLLO_OPTIONS } from 'apollo-angular';
 import { HttpLink } from 'apollo-angular/http';
 import { AuthInterceptor } from 'common-biz';
 import { CommonNonBizModule } from 'common-non-biz';
-import { LoadingInterceptor } from '../../../common-non-biz/src/lib/loading/loading.interceptor';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -43,7 +42,6 @@ export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
   providers: [
     { provide: APOLLO_OPTIONS, useFactory: createApollo, deps: [HttpLink] },
     { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true },
   ],
   bootstrap: [AppComponent],
 })

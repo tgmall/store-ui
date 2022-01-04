@@ -25,6 +25,8 @@ import { SearchBoxComponent } from './search-box/search-box.component';
 export * from './forms/form-model';
 export * from './forms/field-error/field-error-mapper.service';
 export * from './modals/modal.service';
+export * from './loading/loading.service';
+export * from './loading/loading.interceptor';
 
 @NgModule({
   declarations: [
@@ -69,6 +71,7 @@ export * from './modals/modal.service';
     ModalContainerComponent,
     SafeResourceUrlPipe,
     LoadingComponent,
+    IconLoadingComponent,
   ],
 })
 export class CommonNonBizModule {

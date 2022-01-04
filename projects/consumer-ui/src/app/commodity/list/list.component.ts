@@ -1,14 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { CommoditiesGQL, CommoditiesQuery } from 'common-biz';
+import { CommoditiesQuery } from 'common-biz';
+import { LoadingService } from 'common-non-biz';
+import { CommodityListApi } from './commodity-list-api.service';
 
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss'],
+  providers: [CommodityListApi, LoadingService],
 })
 export class ListComponent implements OnInit {
 
-  constructor(private gql: CommoditiesGQL) {
+  constructor(private api: CommodityListApi, public loading: LoadingService) {
   }
 
   items: CommoditiesQuery['commodities'] = [];
@@ -17,9 +20,9 @@ export class ListComponent implements OnInit {
     this.reload();
   }
 
-  private reload(): void {
-    this.gql.fetch({ tags: 'Python' }).subscribe(resp => {
-      return this.items = resp.data.commodities;
+  reload(): void {
+    this.api.query().subscribe(data => {
+      return this.items = data;
     });
   }
 }

@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { CommonNonBizModule } from 'common-non-biz';
 import { CommoditySharedModule } from '../commodity-shared/commodity-shared.module';
 import { CommodityLayoutComponent } from './commodity-layout/commodity-layout.component';
 
@@ -18,6 +19,7 @@ import { ShowComponent } from './show/show.component';
     CommonModule,
     CommodityRoutingModule,
     CommoditySharedModule,
+    CommonNonBizModule,
   ],
 })
 export class CommodityModule {

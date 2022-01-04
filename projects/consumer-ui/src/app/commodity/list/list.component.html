@@ -1,1 +1,4 @@
+<h3>列表 <a href="javascript:void(0)" (click)="reload()" *ngIf="!loading.isLoading">刷新</a>
+  <ui-icon name="loading" *ngIf="loading.isLoading"></ui-icon>
+</h3>
 <app-commodity-list [items]="items"></app-commodity-list>
